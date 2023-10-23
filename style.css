@@ -158,17 +158,17 @@ h1 {font-weight: normal;}
     .stats { margin-bottom: 58px;}
 
     /*  EXPLORE THE AREA SECTION  */
-    .container .explore hr { border-bottom: 5px solid #4f4f4f; width: 180px; padding: 0 27px; margin-bottom: 30px; }
-    .container .explore > h1 { margin-bottom:36px;}
-    .container .maps { margin-bottom: 30.56px; }
-	.container.card-body { padding: 0 24.9px 28px; }
-	.container .btn { font-size: 30px; letter-spacing: -0.03; line-height: 38px; padding: 7.87px 29.04px 11.13px 29.96px !important; margin-bottom: 80.53px; }
-	.container .maps .card-body { display: flex; flex-direction: column;}
-	.container .card-title { font-size: 31px; line-height: 33px; margin-bottom:16px;}
-    .container .card-body { padding: 8px 0 28px 24.9px}
-	.container .maps .card-body > p { font-size: 20px; line-height: 29px;  }
-    .container .maps .card { width: auto; max-width: 335px; display: flex; flex-direction: column; box-shadow: 0px 0px 9px #00000038; border-radius: 8px; border: 1px solid #e2e6ea; background: #f9f9f9 0% 0% no-repeat padding-box; opacity: 1;padding: 0px !important; margin: 0;}
-    .container .maps img { margin: 0px !important;}
+    .explore-area .explore hr { border-bottom: 5px solid #4f4f4f; width: 180px; padding: 0 27px; margin-bottom: 30px; }
+    .explore-area .explore > h1 { margin-bottom:36px;}
+    .explore-area .maps { margin-bottom: 30.56px; }
+	.explore-area .card-body { padding: 0 24.9px 28px; }
+	.explore-area .btn { font-size: 30px; letter-spacing: -0.03; line-height: 38px; padding: 7.87px 29.04px 11.13px 29.96px !important; margin-bottom: 80.53px; }
+	.explore-area .maps .card-body { display: flex; flex-direction: column;}
+	.explore-area .card-title { font-size: 31px; line-height: 33px; margin-bottom:16px;}
+    .explore-area .card-body { padding: 8px 0 28px 24.9px}
+	.explore-area .maps .card-body > p { font-size: 20px; line-height: 29px;  }
+    .explore-area .maps .card { width: auto; max-width: 335px; display: flex; flex-direction: column; box-shadow: 0px 0px 9px #00000038; border-radius: 8px; border: 1px solid #e2e6ea; background: #f9f9f9 0% 0% no-repeat padding-box; opacity: 1;padding: 0px !important; margin: 0;}
+    .explore-area .maps img { margin: 0px !important;}
     
     /*  Footer Section */
     .footer { min-height: 200px;}
@@ -198,11 +198,41 @@ h1 {font-weight: normal;}
 }
 
 @media (min-width: 1100px){
+    /*-- Header and Navigation --*/
+    .header nav { display: flex; padding: 0px;  }
+    .header ul  { list-style-type: none; gap: 66.15px; }
+    .header a {text-decoration: none; color:#000000;}
+    .header img { min-width: 166.01px; min-height: 61.64px;}
+    .header .hamburger {display: none;}
+    .header .icons { gap:52px ;}
+
+       /*  Hero Section */
+    .hero .title > h2 { font-size: 39px; line-height: 29px; margin-bottom: 35px;}
+    .hero .title > h1 { font-size: 58px; line-height: 29px; margin-bottom: 49px;}
+    .hero .title .btn { font-size: 30px; padding: 8.36px 38.5px 10.64px 38.5px}
+
      /*   DEDICATED AND MEETING SECTION      */
     .box-dm { margin-bottom:124px ;}
     .box-dm .dedicated .card { position: relative; z-index: 5;max-width: 597px;}
     .box-dm .dedicated img {transition: 1000ms; float:right; top: -300px;max-width:891px; max-height: 531px; margin-bottom: 124px;}
+    .box-dm .dedicated .card > h1 { font-size: 60px !important; line-height: 29px; padding-top: 33.13px;}
 
         /*    STATS SECTION     */
-    .stats { position: relative; top:-295px}
+    .stats { min-height: 130px; position: relative; top:-295px}
+
+        /*  EXPLORE THE AREA SECTION  */
+    .explore-area { position: relative; top: -280px; padding: 0 96.86px;}
+    .explore-area .maps {flex-wrap: nowrap; margin-bottom: 50px;}
+    .explore-area .card-body { padding: 8px 0px 28px 14px ; }
+    .explore-area .card-title {font-size: 28px;}
+    .explore-area .card > p { font-size: 20px;  }
+    .explore-area .card .map {max-width: 335px; ;}
+    .explore-area h1 { font-size: 60px; line-height: 29px;}
+
+    /*-- FOOTER SECTION --*/
+
+}
+
+@media (max-width: 1400px){
+    .explore-area .maps {flex-wrap: wrap;}
 }
