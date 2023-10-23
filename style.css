@@ -139,13 +139,13 @@ h1 {font-weight: normal;}
     .hero .btn { text-transform: uppercase; padding: 10px 14.31px 9.92px 15.11px; margin: 0; }
     
   /*     DEDICATED AND MEETING SECTION      */
-    .dedicated { padding:0px;}
-    .dedicated .card hr{ border-bottom: 5px solid #4f4f4f; width: 158px; padding: 0 27px; margin-bottom: 30px;}
-    .dedicated .card > h1 {  max-width: 311px; letter-spacing: 0px; margin-bottom: 36px;}
-    .dedicated .card > p { margin-bottom: 26px; }
-    .dedicated .btn { padding: 7.87px 29.47px 11.13px 29.53px; line-height: 38px; letter-spacing: -0.03px;}
-    .dedicated .card { margin-bottom: 25.13px;}
-    .dedicated img{ transition: 1000ms; margin: 0 12px 50px 12px; max-width: 352px;}
+    .box-dm .dedicated { padding:0px;}
+    .box-dm .box-dm .dedicated .card hr{ border-bottom: 5px solid #4f4f4f; width: 158px; padding: 0 27px; margin-bottom: 30px;}
+    .box-dm .dedicated .card > h1 {  max-width: 311px; letter-spacing: 0px; margin-bottom: 36px; }
+    .box-dm .dedicated .card > p { margin-bottom: 26px; }
+    .box-dm .dedicated .btn { padding: 7.87px 29.47px 11.13px 29.53px; line-height: 38px; letter-spacing: -0.03px;}
+    .box-dm .dedicated .card { margin-bottom: 25.13px;}
+    .box-dm .dedicated img{ transition: 1000ms; margin: 0 12px 50px 12px; max-width: 352px; box-shadow: 0px 0px 9px #00000038; border-radius: 8px; opacity: 1;}
 
    /*    STATS SECTION       */
     .stats {  line-height: 38px; min-height: 385px; gap:55px;}
@@ -180,12 +180,27 @@ h1 {font-weight: normal;}
     .hero { transition: 1000ms ;min-height: 580px; background-image: url("images/IMG@2x.jpg"); background-size: cover; background-position: bottom center; top: 0; margin: 0;  }
     .hero .gradient { transition: 1000ms;  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.586), rgba(0, 0, 0, 0)); min-height: 580px;  }
   
-    /*     DEDICATED AND MEETING SECTION      */
-    .dedicated { margin-top: 84px; padding: 0 27px;}
-    .dedicated img { transition: 1000ms ; max-width: 100% }
-
-    /*     STATS SECTION    */
-    .stats{ flex-direction: column;}
-
+    /*   DEDICATED AND MEETING SECTION      */
     
+    .box-dm .dedicated { margin-top: 84px; padding: 0 27px;}
+    .box-dm .dedicated img { transition: 1000ms ; max-width: 100% }
+    .box-dm .dedicated .card { max-width: 597px;padding: 33.13px 27px 51px 26.86px }
+    .box-dm .dedicated .card > h1 { min-width: 389px;}
+    .box-dm .dedicated .card > p { max-width: 540px; padding: 0 27px 27px 0 }
+    .box-dm .dedicated .card > hr { margin-bottom: 38.01px ;}
+}
+@media (min-width: 800px){
+
+    /*    STATS SECTION     */
+    .stats { min-width: 800px; display: flex !important; flex-direction: row !important; justify-content: space-evenly !important;}
+    .stats .text { position: relative; top:5px; }
+}
+
+@media (min-width: 1100px){
+     /*   DEDICATED AND MEETING SECTION      */
+    .box-dm .dedicated .card { position: relative; z-index: 5;max-width: 597px}
+    .box-dm .dedicated img {transition: 1000ms; float:right; top: -300px;max-width:891px; max-height: 531px; margin-bottom: 124px;}
+
+        /*    STATS SECTION     */
+    .stats { margin-top: 0;}
 }
