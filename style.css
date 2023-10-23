@@ -186,7 +186,7 @@ h1 {font-weight: normal;}
   
     /*   DEDICATED AND MEETING SECTION      */
     
-    .box-dm .dedicated { margin-top: 84px; padding: 0 27px;}
+    .box-dm .dedicated { margin-top: 84px; }
     .box-dm .dedicated img { transition: 1000ms ; max-width: 100%;}
     .box-dm .dedicated .card { max-width: 597px;padding: 33.13px 27px 51px 26.86px }
     .box-dm .dedicated .card > h1 { min-width: 389px;}
@@ -221,26 +221,27 @@ h1 {font-weight: normal;}
     .box-dm { margin-bottom:124px ;}
     .box-dm .dedicated {display:block; position: relative;}
     .box-dm .dedicated .card { position: relative; z-index: 5;max-width: 597px;}
-    .box-dm .dedicated img {transition: 1000ms;  float:right; top: -300px;max-width:891px; max-height: 531px; margin-bottom: 124px;}
+    .box-dm .dedicated img {transition: 1000ms;  float:right; top: -360px;max-width:891px; max-height: 531px; margin-bottom: 124px;}
     .box-dm .dedicated .card > h1 { font-size: 60px !important; line-height: 29px; padding-top: 33.13px;}
 
         /*    STATS SECTION     */
-    .stats { min-height: 130px; position: relative; top:-295px}
+    .stats { min-height: 130px; position: relative; top:-355px}
 
         /*  EXPLORE THE AREA SECTION  */
-    .explore-area { position: relative; top: -280px; padding: 0 27px;}
+    .explore-area { position: relative; top: -320px; padding: 0 27px;}
     .explore-area .maps {flex-wrap: nowrap; margin-bottom: 50px;}
     .explore-area .card-body { padding: 8px 0px 28px 14px ; }
     .explore-area .card-title {font-size: 28px;}
     .explore-area .card > p { font-size: 20px;  }
     .explore-area .card .map {max-width: 335px; ;}
-    .explore-area h1 { font-size: 60px; line-height: 29px;}
+    .explore-area .explore h1 { font-size: 60px; line-height: 29px; margin-bottom: 50px;}
+    .explore-area .explore hr { margin-bottom: 55px;}
     
 
     /*-- FOOTER SECTION --*/
     .footer {min-height:478px; position: relative; top:-279.87px}
     .footer .copywrite { background-color:#195190;min-height: 87px; }
-    .footer .widgets { display: flex;padding: 81.92px 120.2px 85.85px 100px}
+    .footer .widgets { display: flex;padding: 88.92px 120.2px 85.85px 100px}
     .footer hr { margin-bottom: 25.31px; margin-top: 10px; border-bottom: 3px solid #ffffff; width: 50px; margin-left: 1px;  }
     .footer .widgets .about > p, .footer .widgets .connect > p {line-height: 35px; letter-spacing: -0.18px; }
     .footer .widgets .city .addNum > p { line-height: 25px; letter-spacing: -0.18px;}
