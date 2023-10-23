@@ -187,7 +187,7 @@ h1 {font-weight: normal;}
     /*   DEDICATED AND MEETING SECTION      */
     
     .box-dm .dedicated { margin-top: 84px; padding: 0 27px;}
-    .box-dm .dedicated img { transition: 1000ms ; max-width: 100% }
+    .box-dm .dedicated img { transition: 1000ms ; max-width: 100%;}
     .box-dm .dedicated .card { max-width: 597px;padding: 33.13px 27px 51px 26.86px }
     .box-dm .dedicated .card > h1 { min-width: 389px;}
     .box-dm .dedicated .card > p { max-width: 540px; padding: 0 27px 27px 0 }
@@ -198,7 +198,11 @@ h1 {font-weight: normal;}
     /*    STATS SECTION     */
     .stats { min-width: 800px; max-height:130px !important; min-height: 129px; display: flex !important; flex-direction: row !important; justify-content: space-evenly !important;}
     .stats .text { position: relative; top:5px; }
-
+    
+    /*  Hero Section */
+    .hero .title > h2 { font-size: 39px; line-height: 29px; margin-bottom: 35px;}
+    .hero .title > h1 { font-size: 58px; line-height: 29px; margin-bottom: 49px;}
+    .hero .title .btn { font-size: 30px; padding: 8.36px 38.5px 10.64px 38.5px}
 
 
 }
@@ -212,15 +216,12 @@ h1 {font-weight: normal;}
     .header .hamburger {display: none;}
     .header .icons { gap:52px ;}
 
-       /*  Hero Section */
-    .hero .title > h2 { font-size: 39px; line-height: 29px; margin-bottom: 35px;}
-    .hero .title > h1 { font-size: 58px; line-height: 29px; margin-bottom: 49px;}
-    .hero .title .btn { font-size: 30px; padding: 8.36px 38.5px 10.64px 38.5px}
 
      /*   DEDICATED AND MEETING SECTION      */
     .box-dm { margin-bottom:124px ;}
+    .box-dm .dedicated {display:block; position: relative;}
     .box-dm .dedicated .card { position: relative; z-index: 5;max-width: 597px;}
-    .box-dm .dedicated img {transition: 1000ms; float:right; top: -300px;max-width:891px; max-height: 531px; margin-bottom: 124px;}
+    .box-dm .dedicated img {transition: 1000ms;  float:right; top: -300px;max-width:891px; max-height: 531px; margin-bottom: 124px;}
     .box-dm .dedicated .card > h1 { font-size: 60px !important; line-height: 29px; padding-top: 33.13px;}
 
         /*    STATS SECTION     */
