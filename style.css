@@ -133,7 +133,7 @@ h1 {font-weight: normal;}
     .header .hamburger .bar, .hamburger::after, .hamburger::before { content: "";  width: 100%; height: 2px; background-color: #000000; transition: 0.4s; opacity: 1; margin-bottom:6px;  }
     
     /*  Hero Section */
-    .hero .gradient { transition: 1000ms; width: 100%; position: absolute; top: 91px; background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0)); opacity: 1; z-index:1; min-height: 391px; }
+    .hero .gradient { transition: 1000ms; width: 100%; position: absolute; top: 91px; background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.497), rgba(0, 0, 0, 0)); opacity: 1; z-index:1; min-height: 391px; }
     .hero .title > h2 { text-transform: uppercase; line-height: 17px; margin-bottom: 7px;}
     .hero .title { position: relative; top:108px;}
     .hero .title > h1 { margin-bottom: 15.32px;}
@@ -145,8 +145,8 @@ h1 {font-weight: normal;}
     .box-dm .dedicated .card hr{ border-bottom: 5px solid #4f4f4f; width: 158px; padding: 0 27px; margin-bottom: 30px;}
     .box-dm .dedicated .card > h1 {  max-width: 311px; letter-spacing: 0px; margin-bottom: 36px; padding-top: 30px;}
     .box-dm .dedicated .card > p { margin-bottom: 26px; }
-    .box-dm .dedicated .btn { padding: 7.87px 29.47px 11.13px 29.53px; line-height: 38px; letter-spacing: -0.03px; margin-bottom: 47.73px;}
-    .box-dm .dedicated .card { margin-bottom: 25.13px;}
+    .box-dm .dedicated .btn { padding: 7.87px 29.47px 11.13px 29.53px; line-height: 38px; letter-spacing: -0.03px; margin-bottom: 26px;}
+    .box-dm .dedicated .card { margin-bottom: 25.13px; padding: 30px 13.5px;}
     .box-dm .dedicated img{ transition: 1000ms; margin: 0 12px 50px 12px; max-width: 352px; box-shadow: 0px 0px 9px #00000038; border-radius: 8px; opacity: 1;}
 
    /*    STATS SECTION       */
@@ -159,7 +159,7 @@ h1 {font-weight: normal;}
     .stats { margin-bottom: 58px;}
 
     /*  EXPLORE THE AREA SECTION  */
-    .explore-area  { padding:10px;}
+    .explore-area  { padding:0px;}
     .explore-area .explore hr { border-bottom: 5px solid #4f4f4f; width: 180px; padding: 0 27px; margin-bottom: 30px; margin-left: 16px;}
     .explore-area .explore > h1 { margin-bottom:36px; margin-left:16px;}
     .explore-area .maps { margin-bottom: 30.56px; }
