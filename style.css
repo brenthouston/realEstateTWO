@@ -3,8 +3,8 @@
 /*Defaults*/
 * { box-sizing: border-box; padding: 0; margin: 0; outline: none; }
 html,
-body { min-width: 320px; overflow-x: hidden; }
-body { font-size: 16px; font-family: 'Montserrat', sans-serif; background-color: #F4F7FB; position: relative;}
+body { min-width: 320px; overflow-x: hidden;}
+body { font-size: 16px; font-family: 'Montserrat', sans-serif; background-color: #F4F7FB; position: relative; overflow-y: hidden;}
 img { max-width: 100%; height: auto !important; }
 button { background: none; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif; }
 input,
@@ -28,6 +28,7 @@ h1 {font-weight: normal;}
 .fs-21 { font-size: 21.84px; }
 .fs-22 { font-size: 22px; }
 .fs-24 { font-size: 24px; }
+.fs-28 { font-size: 28px; }
 .fs-30 { font-size: 30px; }
 .fs-31 { font-size: 31px; }
 .fs-34 { font-size: 34px; }
@@ -175,6 +176,7 @@ h1 {font-weight: normal;}
     .footer .mls { gap: 49px; padding: 43.26px 0 28px 0}
     .footer .copywrite p { color: #FFFFFF; font-size: 13px !important; line-height: 22px !important; }
     .footer .copywrite a { color: #FFFFFF; text-decoration: underline; }
+    .footer .widgets { display: none;}
 }
 @media (min-width: 600px){
      /*  Hero Section */
@@ -195,6 +197,9 @@ h1 {font-weight: normal;}
     /*    STATS SECTION     */
     .stats { min-width: 800px; max-height:130px !important; min-height: 129px; display: flex !important; flex-direction: row !important; justify-content: space-evenly !important;}
     .stats .text { position: relative; top:5px; }
+
+
+
 }
 
 @media (min-width: 1100px){
@@ -230,7 +235,18 @@ h1 {font-weight: normal;}
     .explore-area h1 { font-size: 60px; line-height: 29px;}
 
     /*-- FOOTER SECTION --*/
-
+    .footer {min-height:478px; position: relative; top:-279.87px}
+    .footer .copywrite { background-color:#195190;min-height: 87px; }
+    .footer .widgets { display: flex;padding: 81.92px 120.2px 85.85px 100px}
+    .footer hr { margin-bottom: 25.31px; margin-top: 10px; border-bottom: 3px solid #ffffff; width: 50px; margin-left: 1px;  }
+    .footer .widgets .about > p, .footer .widgets .connect > p {line-height: 35px; letter-spacing: -0.18px; }
+    .footer .widgets .city .addNum > p { line-height: 25px; letter-spacing: -0.18px;}
+    .footer .social {padding: 33px 5px; gap:25px }
+    .footer .widgets .about-connect { gap:109px }
+    .footer .mls { justify-content: start; position: relative; left:100px; bottom: -95px; }
+    .footer .copywrite { justify-content: end; flex-direction: row;  }
+    .footer .copywrite { padding-right: 100px;}
+    .footer .about > h2, .footer .connect > h2, .footer .city > h2{margin-bottom: 15px;}
 }
 
 @media (max-width: 1400px){
