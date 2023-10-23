@@ -73,6 +73,8 @@ h1 {font-weight: normal;}
 .btn.bg-none {background: none; color: #1076F4;}
 .btn.bg-none:hover {color:#1354BC; transition: ease-in-out .2s}
 
+
+/* FLEX POSITIONING */
 .flex { display: flex; }
 .flex.start { justify-content: flex-start; }
 .flex.end { justify-content: flex-end; }
@@ -129,11 +131,11 @@ h1 {font-weight: normal;}
     .header .hamburger .bar, .hamburger::after, .hamburger::before { content: "";  width: 100%; height: 2px; background-color: #000000; transition: 0.4s; opacity: 1; margin-bottom:6px;  }
     
     /*  Hero Section */
-    .hero .gradient {  width: 100%; position: absolute; top: 91px; background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0)); opacity: 1; z-index:1; min-height: 391px; }
+    .hero .gradient { transition: 1000ms; width: 100%; position: absolute; top: 91px; background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0)); opacity: 1; z-index:1; min-height: 391px; }
     .hero .title > h2 { text-transform: uppercase; line-height: 17px; margin-bottom: 7px;}
     .hero .title { position: relative; top:108px;}
     .hero .title > h1 { margin-bottom: 15.32px;}
-    .hero { min-height: 391px; background-image: url("images/IMG@2x.jpg"); margin-bottom: 50px; background-size: cover; background-position: bottom center; top: 0; margin: 0; margin-bottom: 50.87px }
+    .hero { transition: 1000ms; min-height: 391px; background-image: url("images/IMG@2x.jpg"); margin-bottom: 50px; background-size: cover; background-position: bottom center; top: 0; margin: 0; margin-bottom: 50.87px }
     .hero .btn { text-transform: uppercase; padding: 10px 14.31px 9.92px 15.11px; margin: 0; }
     
   /*     DEDICATED AND MEETING SECTION      */
@@ -143,12 +145,15 @@ h1 {font-weight: normal;}
     .dedicated .card > p { margin-bottom: 26px; }
     .dedicated .btn { padding: 7.87px 29.47px 11.13px 29.53px; line-height: 38px; letter-spacing: -0.03px;}
     .dedicated .card { margin-bottom: 25.13px;}
-    .dedicated img{ margin: 0 12px 50px 12px; max-width: 352px;}
+    .dedicated img{ transition: 1000ms; margin: 0 12px 50px 12px; max-width: 352px;}
 
    /*    STATS SECTION       */
-    .stats .numbers{  line-height: 38px; min-height: 385px;}
-    .stats .text-box { gap:55px; bottom:-5px }
-    .stats .text-box .text > p { line-height: 25px !important; opacity: 1; }
+    .stats {  line-height: 38px; min-height: 385px; gap:55px;}
+    .stats .two-hundred {right: 26px }
+    .stats .years .text > p { position: relative;left: 26px; }
+    .stats .nine { position: relative; left:28px; }
+    .stats .fewer-days .text > p { position: relative; left:50px}
+    .stats .text > p { text-align: left;  line-height: 25px !important; opacity: 1; }
     .stats { margin-bottom: 58px;}
 
     /*  EXPLORE THE AREA SECTION  */
@@ -161,7 +166,7 @@ h1 {font-weight: normal;}
 	.container .card-title { font-size: 31px; line-height: 33px; margin-bottom:16px;}
     .container .card-body { padding: 8px 0 28px 24.9px}
 	.container .maps .card-body > p { font-size: 20px; line-height: 29px;  }
-    .container .maps .card { width: auto; display: flex; flex-direction: column; box-shadow: 0px 0px 9px #00000038; border-radius: 8px; border: 1px solid #e2e6ea; background: #f9f9f9 0% 0% no-repeat padding-box; opacity: 1;padding: 0px !important; margin: 0;}
+    .container .maps .card { width: auto; max-width: 335px; display: flex; flex-direction: column; box-shadow: 0px 0px 9px #00000038; border-radius: 8px; border: 1px solid #e2e6ea; background: #f9f9f9 0% 0% no-repeat padding-box; opacity: 1;padding: 0px !important; margin: 0;}
     .container .maps img { margin: 0px !important;}
     
     /*  Footer Section */
@@ -169,4 +174,18 @@ h1 {font-weight: normal;}
     .footer .mls { gap: 49px; padding: 43.26px 0 28px 0}
     .footer .copywrite p { color: #FFFFFF; font-size: 13px !important; line-height: 22px !important; }
     .footer .copywrite a { color: #FFFFFF; text-decoration: underline; }
+}
+@media (min-width: 600px){
+     /*  Hero Section */
+    .hero { transition: 1000ms ;min-height: 580px; background-image: url("images/IMG@2x.jpg"); background-size: cover; background-position: bottom center; top: 0; margin: 0;  }
+    .hero .gradient { transition: 1000ms;  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.586), rgba(0, 0, 0, 0)); min-height: 580px;  }
+  
+    /*     DEDICATED AND MEETING SECTION      */
+    .dedicated { margin-top: 84px; padding: 0 27px;}
+    .dedicated img { transition: 1000ms ; max-width: 100% }
+
+    /*     STATS SECTION    */
+    .stats{ flex-direction: column;}
+
+    
 }
